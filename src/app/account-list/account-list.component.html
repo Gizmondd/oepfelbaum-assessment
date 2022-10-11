@@ -1,13 +1,17 @@
-<h2>Accounts</h2>
+<h2>Konten</h2>
 
-<h2 id="total-balance" [ngClass]="{'is-minus': total < 0}">{{ total | round | number:'1.2-2' }} </h2>
+<h2 id="total-balance" class="mb-4" [ngClass]="{'is-minus': total < 0}">{{ total | round | number:'1.2-2' }} CHF</h2>
 
-<a *ngFor="let account of accounts" [routerLink]="['/accounts', account.id]">
+<div class="list-group">
+    <a *ngFor="let account of accounts" class="list-group-item" [routerLink]="['/accounts', account.id]">
 
-    <h3 class="account-name">{{ account.name }}</h3>
-
-    <p class="account-balance" [ngClass]="{'is-minus': account.balance < 0}">
-        {{ account.balance | round | number:'1.2-2' }}
-    </p>
-
-</a>
+        <div class="single-account">
+            <div class="account-name">{{ account.name }}</div>
+        
+            <div class="account-balance" [ngClass]="{'is-minus': account.balance < 0}">
+                {{ account.balance | round | number:'1.2-2' }} CHF
+            </div>
+        </div>
+    
+    </a>
+</div>
