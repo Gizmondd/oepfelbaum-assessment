@@ -2,27 +2,18 @@
 @import 'bootstrap/scss/_variables.scss';
 @import 'bootstrap/scss/_mixins.scss';
 
+@import '../../styles.scss';
+
 #total-balance {
     &.is-minus {
-        color: crimson;
+        color: $minus-red;
     }
 
     margin: 1rem 0 1rem 0;
 }
 
-.single-account {
-    display: flex;
-    justify-content: space-between;
-    font-size: 1.5rem;
-}
-@include media-breakpoint-down(md) {
-    .single-account {
-        display: block;
-    }
-}
-
 .account-balance {
     &.is-minus {
-        color: crimson;
+        color: $minus-red;
     }
 }

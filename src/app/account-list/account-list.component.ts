@@ -3,13 +3,7 @@ import { HttpClient } from '@angular/common/http';
 
 import { Observable } from 'rxjs';
 import { getNumberOfCurrencyDigits } from '@angular/common';
-
-interface Account {
-  id: string,
-  name: string, 
-  type: string,
-  balance: number,
-}
+import { Account } from '../interfaces/account';
 
 @Component({
   selector: 'app-account-list',

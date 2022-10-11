@@ -3,12 +3,12 @@
 <h2 id="total-balance" class="mb-4" [ngClass]="{'is-minus': total < 0}">{{ total | round | number:'1.2-2' }} CHF</h2>
 
 <div class="list-group">
-    <a *ngFor="let account of accounts" class="list-group-item" [routerLink]="['/accounts', account.id]">
+    <a *ngFor="let account of accounts" class="list-group-item" [routerLink]="['/account', account.id]">
 
-        <div class="single-account">
-            <div class="account-name">{{ account.name }}</div>
-        
-            <div class="account-balance" [ngClass]="{'is-minus': account.balance < 0}">
+        <div class="row">
+            <div class="account-name col">{{ account.name }}</div>
+            <div class="w-100 d-sm-none"></div>
+            <div class="account-balance col text-end" [ngClass]="{'is-minus': account.balance < 0}">
                 {{ account.balance | round | number:'1.2-2' }} CHF
             </div>
         </div>
