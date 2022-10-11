@@ -1,0 +1,11 @@
+#total-balance {
+    &.is-minus {
+        color: red;
+    }
+}
+
+.account-balance {
+    &.is-minus {
+        color: red;
+    }
+}

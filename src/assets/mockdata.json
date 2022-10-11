@@ -1,0 +1,20 @@
+[
+    {
+        "id": "1",
+        "name": "Privatkonto 1",
+        "type": "private",
+        "balance": 0
+    },
+    {
+        "id": "2",
+        "name": "Privatkonto 2",
+        "type": "private",
+        "balance": -0.01
+    },
+    {
+        "id": "3",
+        "name": "Sparkonto",
+        "type": "savings",
+        "balance": 0
+    }
+]
