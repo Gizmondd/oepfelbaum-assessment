@@ -7,12 +7,14 @@ import { AppComponent } from './app.component';
 import { AccountListComponent } from './account-list/account-list.component';
 import { RoundPipe } from './round.pipe';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { AccountDetailsComponent } from './account-details/account-details.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AccountListComponent,
-    RoundPipe
+    RoundPipe,
+    AccountDetailsComponent
   ],
   imports: [
     BrowserModule,

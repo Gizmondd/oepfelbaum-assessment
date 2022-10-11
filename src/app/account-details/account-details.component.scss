@@ -1,0 +1,19 @@
+@import 'bootstrap/scss/_functions.scss';
+@import 'bootstrap/scss/_variables.scss';
+@import 'bootstrap/scss/_mixins.scss';
+
+@import '../../styles.scss';
+
+#total-balance {
+    &.is-minus {
+        color: $minus-red;
+    }
+
+    margin: 1rem 0 1rem 0;
+}
+
+.transaction-amount {
+    &.is-minus {
+        color: $minus-red;
+    }
+}

@@ -1,0 +1,17 @@
+[
+    {
+        "description": "Einzahlung bar",
+        "datetime": "2022-10-10T17:38:25.593Z",
+        "amount": 205.53
+    },
+    {
+        "description": "Zahlung Miete",
+        "datetime": "2022-02-10T17:12:33.253Z",
+        "amount": -2400.51
+    },
+    {
+        "description": "Migros Einkauf",
+        "datetime": "2022-02-20T17:38:25.593Z",
+        "amount": -100.52
+    }
+]
