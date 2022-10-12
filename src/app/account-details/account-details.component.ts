@@ -35,12 +35,17 @@ export class AccountDetailsComponent implements OnInit {
     this.http.get<Transaction[]>('/assets/mockdata_transactions.json').subscribe(
       (data: Transaction[]) => {
         this.transactions = data;
+        this.sortByDate(true);
       }
     )
   }
 
-  sortBy(descending: Boolean) {
-    this.transactions.sort( (a, b) => a.datetime.toString().localeCompare(b.toString()) )
+  sortByDate(descending: Boolean) {
+    if (descending) {
+      this.transactions.sort( (b, a) => a.datetime.toString().localeCompare(b.datetime.toString()) )
+    } else {
+      this.transactions.sort( (a, b) => a.datetime.toString().localeCompare(b.datetime.toString()) )
+    }
   }
 
 }
