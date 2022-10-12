@@ -1,3 +1,13 @@
-<div class="container">
+<div class="container wrapper">
+  <header class="header">
+    <a [routerLink]="['/']">
+      Digitales Portemonnaie
+    </a>
+  </header>
+
   <router-outlet></router-outlet>
+
+  <footer class="footer container">
+    <span>@ 2022 Lukas Yu.</span>
+  </footer>
 </div>
