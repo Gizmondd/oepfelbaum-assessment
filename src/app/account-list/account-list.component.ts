@@ -1,5 +1,6 @@
 import { Component, OnInit, Pipe } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { environment } from 'src/environments/environment';
 
 import { Observable } from 'rxjs';
 import { getNumberOfCurrencyDigits } from '@angular/common';
@@ -18,16 +19,12 @@ export class AccountListComponent implements OnInit {
   constructor(private http: HttpClient) { }
 
   ngOnInit(): void {
-    this.http.get<Account[]>('/assets/mockdata.json').subscribe(
+    this.http.get<Account[]>(environment.serverAdress + '/accounts').subscribe(
       (data) => {
         this.accounts = data;
         this.total = this.accounts.reduce( (sum, current) => sum + current.balance, 0);
       }
     );
-  }
-
-  onClick(accountId: string) {
-    window.alert(accountId);
   }
 
 }

@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { HttpClient } from '@angular/common/http';
+import { environment } from 'src/environments/environment';
 
 import { Observable } from 'rxjs';
 import { Transaction } from '../interfaces/transaction';
@@ -22,7 +23,7 @@ export class AccountDetailsComponent implements OnInit {
     const routeParams = this.route.snapshot.paramMap;
     const accountId = routeParams.get('accountId');
 
-    this.http.get<Account[]>('/assets/mockdata.json').subscribe(
+    this.http.get<Account[]>(environment.serverAdress + '/accounts').subscribe(
       (data: Account[]) => {
         data.forEach(account => {
           if (account.id == accountId) {
@@ -32,7 +33,7 @@ export class AccountDetailsComponent implements OnInit {
       }
     )
 
-    this.http.get<Transaction[]>('/assets/mockdata_transactions.json').subscribe(
+    this.http.get<Transaction[]>(environment.serverAdress + '/transactions/' + accountId).subscribe(
       (data: Transaction[]) => {
         this.transactions = data;
         this.sortByDate(true);
