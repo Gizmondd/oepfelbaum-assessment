@@ -1,27 +1,33 @@
-# OepfelbaumAssessment
+*Digitales Portemonnaie* is a web-based application for getting an simple overview of your bank accounts. As of right now, it is still a work-in-progress and will only display pre-defined mockdata from the server.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.2.
+## Installation
 
-## Development server
+Requirements:
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- Install [Node.js](https://nodejs.org/en/)
 
-## Code scaffolding
+### Backend
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Within the *Backend* folder, run
 
-## Build
+```
+node app.js
+```
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+The backend application will run locally on port 4000.
 
-## Running unit tests
+### Frontend
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Install Angular CLI:
 
-## Running end-to-end tests
+```
+npm install -g @angular/cli
+```
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+run the application with:
 
-## Further help
+```
+ng serve
+```
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+The application is then available at http://localhost:4200. The application will receive data from the server running on port 4000.

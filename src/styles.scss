@@ -1,1 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
+
+/* Importing Bootstrap SCSS file. */
+@import '~bootstrap/scss/bootstrap';
+
+$minus-red: crimson;
+
+body {
+    background-color: rgb(238, 238, 238);
+}
+
+a {
+    text-decoration: none;
+}

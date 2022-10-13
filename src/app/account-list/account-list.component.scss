@@ -1,0 +1,15 @@
+@import '../../styles.scss';
+
+#total-balance {
+    &.is-minus {
+        color: $minus-red;
+    }
+
+    margin: 1rem 0 1rem 0;
+}
+
+.account-balance {
+    &.is-minus {
+        color: $minus-red;
+    }
+}

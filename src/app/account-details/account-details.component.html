@@ -1,0 +1,29 @@
+<h2>Kontoübersicht</h2>
+
+<h2 id="total-balance" class="mb-4" [ngClass]="{'is-minus': balance < 0}">{{ balance | round | number:'1.2-2' }} CHF</h2>
+
+<div ngbDropdown class="mb-2">
+    <button ngbDropdownToggle class="btn btn-secondary" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Sortieren nach
+    </button>
+    <div ngbDropdownMenu aria-labelledby="dropdownMenuButton">
+        <button ngbDropdownItem (click)="sortByDate(true)" type="button">Neuste zuerst</button>
+        <button ngbDropdownItem (click)="sortByDate(false)" type="button">Älteste zuerst</button>
+    </div>
+</div>
+
+<div class="list-group">
+    <div *ngFor="let transaction of transactions" class="list-group-item">
+
+        <div class="row">
+            <div class="transaction-description col">{{ transaction.description }}</div>
+            <div class="w-100 d-sm-none"></div>
+            <div class="transaction-date col">{{ transaction.datetime | date }}</div>
+            <div class="w-100 d-sm-none"></div>
+            <div class="transaction-amount col text-end" [ngClass]="{'is-minus': transaction.amount < 0}">
+                {{ transaction.amount | round | number:'1.2-2' }} CHF
+            </div>
+        </div>
+    
+    </div>
+</div>

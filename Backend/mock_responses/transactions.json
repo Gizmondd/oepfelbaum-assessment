@@ -1,0 +1,178 @@
+{
+    "Data": {
+        "Transaction": [
+            {
+                "AccountId": "5289a241-4a94-4e7a-942e-e6be8cad9d56",
+                "TransactionId": "caa9169e-6d4f-40fd-ac15-5eb049039366",
+                "CreditDebitIndicator": "Credit",
+                "Status": "Booked",
+                "BookingDateTime": "2022-09-12T18:14:35.004Z",
+                "Amount": {
+                    "Amount": "250.53",
+                    "Currency": "GBP"
+                },
+                "ProprietaryBankTransactionCode": {
+                    "Code": "TFR"
+                },
+                "TransactionInformation": "Monthly savings",
+                "Balance": {
+                    "CreditDebitIndicator": "Credit",
+                    "Type": "Information",
+                    "Amount": {
+                        "Amount": "125680.92",
+                        "Currency": "GBP"
+                    }
+                }
+            },
+            {
+                "AccountId": "5289a241-4a94-4e7a-942e-e6be8cad9d56",
+                "TransactionId": "e841f44d-a136-4544-8cd4-142015716d74",
+                "CreditDebitIndicator": "Debit",
+                "Status": "Booked",
+                "BookingDateTime": "2022-10-12T09:14:35.004Z",
+                "Amount": {
+                    "Amount": "17.93",
+                    "Currency": "GBP"
+                },
+                "ProprietaryBankTransactionCode": {
+                    "Code": "TFR"
+                },
+                "TransactionInformation": "BillPay payment to United Gas Inc.",
+                "Balance": {
+                    "CreditDebitIndicator": "Credit",
+                    "Type": "Information",
+                    "Amount": {
+                        "Amount": "-253.29",
+                        "Currency": "GBP"
+                    }
+                },
+                "MerchantDetails": {
+                    "MerchantName": "United Gas Inc."
+                }
+            },
+            {
+                "AccountId": "5289a241-4a94-4e7a-942e-e6be8cad9d56",
+                "TransactionId": "caa9169e-6d4f-40fd-ac15-5eb049039366",
+                "CreditDebitIndicator": "Credit",
+                "Status": "Booked",
+                "BookingDateTime": "2022-10-09T18:14:35.004Z",
+                "Amount": {
+                    "Amount": "-100.23",
+                    "Currency": "GBP"
+                },
+                "ProprietaryBankTransactionCode": {
+                    "Code": "TFR"
+                },
+                "TransactionInformation": "Credit Card",
+                "Balance": {
+                    "CreditDebitIndicator": "Credit",
+                    "Type": "Information",
+                    "Amount": {
+                        "Amount": "-145.92",
+                        "Currency": "GBP"
+                    }
+                }
+            },
+            {
+                "AccountId": "5289a241-4a94-4e7a-942e-e6be8cad9d56",
+                "TransactionId": "caa9169e-6d4f-40fd-ac15-5eb049039366",
+                "CreditDebitIndicator": "Credit",
+                "Status": "Booked",
+                "BookingDateTime": "2022-10-05T18:14:35.004Z",
+                "Amount": {
+                    "Amount": "6000.61",
+                    "Currency": "GBP"
+                },
+                "ProprietaryBankTransactionCode": {
+                    "Code": "TFR"
+                },
+                "TransactionInformation": "Salary",
+                "Balance": {
+                    "CreditDebitIndicator": "Credit",
+                    "Type": "Information",
+                    "Amount": {
+                        "Amount": "125680.92",
+                        "Currency": "GBP"
+                    }
+                }
+            },
+            {
+                "AccountId": "5289a241-4a94-4e7a-942e-e6be8cad9d56",
+                "TransactionId": "caa9169e-6d4f-40fd-ac15-5eb049039366",
+                "CreditDebitIndicator": "Credit",
+                "Status": "Booked",
+                "BookingDateTime": "2022-10-01T18:14:35.004Z",
+                "Amount": {
+                    "Amount": "-1250.78",
+                    "Currency": "GBP"
+                },
+                "ProprietaryBankTransactionCode": {
+                    "Code": "TFR"
+                },
+                "TransactionInformation": "Monthly rent",
+                "Balance": {
+                    "CreditDebitIndicator": "Credit",
+                    "Type": "Information",
+                    "Amount": {
+                        "Amount": "125680.92",
+                        "Currency": "GBP"
+                    }
+                }
+            },
+            {
+                "AccountId": "747db1cf-581d-48e1-be94-99c8e212c356",
+                "TransactionId": "caa9169e-6d4f-40fd-ac15-5eb049039366",
+                "CreditDebitIndicator": "Credit",
+                "Status": "Booked",
+                "BookingDateTime": "2022-10-05T18:14:35.004Z",
+                "Amount": {
+                    "Amount": "6000.11",
+                    "Currency": "GBP"
+                },
+                "ProprietaryBankTransactionCode": {
+                    "Code": "TFR"
+                },
+                "TransactionInformation": "Salary",
+                "Balance": {
+                    "CreditDebitIndicator": "Credit",
+                    "Type": "Information",
+                    "Amount": {
+                        "Amount": "125680.92",
+                        "Currency": "GBP"
+                    }
+                }
+            },
+            {
+                "AccountId": "747db1cf-581d-48e1-be94-99c8e212c356",
+                "TransactionId": "caa9169e-6d4f-40fd-ac15-5eb049039366",
+                "CreditDebitIndicator": "Credit",
+                "Status": "Booked",
+                "BookingDateTime": "2022-10-01T18:14:35.004Z",
+                "Amount": {
+                    "Amount": "-250.12",
+                    "Currency": "GBP"
+                },
+                "ProprietaryBankTransactionCode": {
+                    "Code": "TFR"
+                },
+                "TransactionInformation": "Monthly rent",
+                "Balance": {
+                    "CreditDebitIndicator": "Credit",
+                    "Type": "Information",
+                    "Amount": {
+                        "Amount": "125680.92",
+                        "Currency": "GBP"
+                    }
+                }
+            }
+        ]
+    },
+    "Links": {
+        "Self": "https://ob.sandbox.natwest.com/open-banking/v3.1/aisp/accounts/5289a241-4a94-4e7a-942e-e6be8cad9d56/transactions?page=0",
+        "First": "https://ob.sandbox.natwest.com/open-banking/v3.1/aisp/accounts/5289a241-4a94-4e7a-942e-e6be8cad9d56/transactions?page=0",
+        "Last": "https://ob.sandbox.natwest.com/open-banking/v3.1/aisp/accounts/5289a241-4a94-4e7a-942e-e6be8cad9d56/transactions?page=0"
+    },
+    "Meta": {
+        "TotalPages": 1
+    }
+}

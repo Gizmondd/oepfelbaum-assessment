@@ -1,0 +1,32 @@
+{
+    "Data": {
+        "Balance": [
+            {
+                "AccountId": "5289a241-4a94-4e7a-942e-e6be8cad9d56",
+                "CreditDebitIndicator": "Credit",
+                "Type": "Expected",
+                "DateTime": "2022-10-10T17:38:25.593Z",
+                "Amount": {
+                    "Amount": "125662.22",
+                    "Currency": "GBP"
+                }
+            },
+            {
+                "AccountId": "747db1cf-581d-48e1-be94-99c8e212c356",
+                "CreditDebitIndicator": "Credit",
+                "Type": "ForwardAvailable",
+                "DateTime": "2022-10-10T17:38:25.593Z",
+                "Amount": {
+                    "Amount": "-1420.14",
+                    "Currency": "GBP"
+                }
+            }
+        ]
+    },
+    "Links": {
+        "Self": "https://ob.sandbox.natwest.com/open-banking/v3.1/aisp/accounts/5289a241-4a94-4e7a-942e-e6be8cad9d56/balances"
+    },
+    "Meta": {
+        "TotalPages": 1
+    }
+}
