@@ -1,20 +1,18 @@
-import { test, expect } from '@playwright/test';
+import { test, expect} from '@playwright/test';
 
-test('Accounts overview has ', async ({ page }) => {
-  await page.goto('https://playwright.dev/');
+test.beforeEach(async ({page}) => {
+  await page.goto('localhost:4200')
+})
 
-  // Expect a title "to contain" a substring.
-  await expect(page).toHaveTitle(/Playwright/);
+test('Accounts overview has a title and account link works', async ({ page }) => {
 
-  // create a locator
-  const getStarted = page.getByRole('link', { name: 'Get started' });
+  // Check Title
+  await expect(page).toHaveTitle('OepfelbaumAssessment');
 
-  // Expect an attribute "to be strictly equal" to the value.
-  await expect(getStarted).toHaveAttribute('href', '/docs/intro');
+  // Click on first account link
+  let link = await page.locator('.list-group-item').first();
+  await link.click();
 
-  // Click the get started link.
-  await getStarted.click();
-
-  // Expects the URL to contain intro.
-  await expect(page).toHaveURL(/.*intro/);
+  // Check new link
+  await expect(page).toHaveURL(/account\/.*/)
 });
