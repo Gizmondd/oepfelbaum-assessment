@@ -34,8 +34,9 @@ app.get('/transactions/:accountId', (req, res) => {
     accountId = req.params['accountId']
 
     transactionsRaw = transactionsFromApi.filter( (trans) => {
-
-        return trans.AccountId == accountId && dayjs().subtract(1, 'month') <= dayjs(trans.BookingDateTime)
+        // TODO Reactivate Filter
+        // return trans.AccountId == accountId && dayjs().subtract(1, 'month') <= dayjs(trans.BookingDateTime)
+        return true
     })
 
     transactionsRaw.forEach( (trans) => {
