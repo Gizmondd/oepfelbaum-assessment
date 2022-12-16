@@ -6,7 +6,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AccountListComponent } from './account-list/account-list.component';
 import { RoundPipe } from './round.pipe';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AccountDetailsComponent } from './account-details/account-details.component';
 
 @NgModule({
@@ -20,7 +19,6 @@ import { AccountDetailsComponent } from './account-details/account-details.compo
     BrowserModule,
     HttpClientModule,
     AppRoutingModule,
-    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]
