@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="de-CH" datatype="plaintext" original="ng2.template" target-language="en">
+    <body>
+      <trans-unit id="account-list-header" datatype="html">
+        <source>Konten</source>
+        <target state="translated">Accounts</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/account-list/account-list.component.html</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+        <note priority="1" from="description">Header h2 element for account list</note>
+        <note priority="1" from="meaning">account list header</note>
+      </trans-unit>
+      <trans-unit id="random-string" datatype="html">
+        <source>Nicht übersetzter String</source>
+        <target state="translated">Not translated string</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/account-list/account-list.component.ts</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+        <note priority="1" from="description">No use at all</note>
+        <note priority="1" from="meaning">A random untranslated String</note>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

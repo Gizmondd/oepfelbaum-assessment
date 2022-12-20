@@ -13,6 +13,14 @@
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",
+      "i18n": {
+        "sourceLocale": "de-CH",
+        "locales": {
+          "en": {
+            "translation": "src/locale/messages.en.xlf"
+          }
+        }
+      },
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
@@ -62,6 +70,9 @@
               "extractLicenses": false,
               "sourceMap": true,
               "namedChunks": true
+            },
+            "en": {
+              "localize": ["en"]
             }
           },
           "defaultConfiguration": "production"
@@ -74,6 +85,9 @@
             },
             "development": {
               "browserTarget": "oepfelbaum_assessment:build:development"
+            },
+            "en": {
+              "browserTarget": "oepfelbaum_assessment:build:en"
             }
           },
           "defaultConfiguration": "development"

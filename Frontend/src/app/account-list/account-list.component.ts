@@ -13,6 +13,8 @@ import { Account } from '../interfaces/account';
 })
 export class AccountListComponent implements OnInit {
 
+  stringToTranslate = $localize `:A random untranslated String|No use at all@@random-string:Nicht übersetzter String`;
+
   accounts : Account[] = [];
   total : number = 0;
 
