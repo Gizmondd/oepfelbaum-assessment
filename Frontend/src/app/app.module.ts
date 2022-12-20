@@ -7,6 +7,11 @@ import { AppComponent } from './app.component';
 import { AccountListComponent } from './account-list/account-list.component';
 import { RoundPipe } from './round.pipe';
 import { AccountDetailsComponent } from './account-details/account-details.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+import { MatTableModule } from '@angular/material/table';
+import { MatButtonModule } from '@angular/material/button';
+import { MatSortModule } from '@angular/material/sort';
 
 @NgModule({
   declarations: [
@@ -19,6 +24,10 @@ import { AccountDetailsComponent } from './account-details/account-details.compo
     BrowserModule,
     HttpClientModule,
     AppRoutingModule,
+    BrowserAnimationsModule,
+    MatTableModule,
+    MatButtonModule,
+    MatSortModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

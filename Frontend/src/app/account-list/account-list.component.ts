@@ -16,6 +16,8 @@ export class AccountListComponent implements OnInit {
   accounts : Account[] = [];
   total : number = 0;
 
+  columnsToDisplay = ['name', 'balance'];
+
   constructor(private http: HttpClient) { }
 
   ngOnInit(): void {

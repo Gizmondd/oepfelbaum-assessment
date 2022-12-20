@@ -2,10 +2,30 @@
 
 $minus-red: crimson;
 
-body {
-    background-color: rgb(238, 238, 238);
-}
-
 a {
     text-decoration: none;
+}
+
+body {
+    color: white;
+    background-color: gray;
+}
+
+// Angular Material
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
+
+
+@media only print {
+    body {
+        color: greenyellow;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    body {
+        color: violet;
+    }
 }
